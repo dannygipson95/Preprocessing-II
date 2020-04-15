@@ -1,1 +1,31 @@
 // Navigation Styles here
+header {
+    .flexbox();
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2% 0;
+    @media @mobile{
+        .flexbox(column);
+    }
+
+    nav {
+        .flexbox();
+        justify-content: space-between;
+        width: 65%;
+        @media @mobile{
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: @shark;
+        font-size: 2.5rem;
+        @media @mobile{
+            font-size: 2rem;
+        }
+    }
+
+}

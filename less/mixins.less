@@ -1,1 +1,16 @@
 // Mixins in here
+
+.flexbox(@direction:row){
+    display:flex;
+    flex-direction: @direction;
+}
+
+.custom-btn(@rounded, @size, @pad, @align, @wide){
+    background: @button-bg;
+    color: @main-bg;
+    border-radius: @rounded;
+    font-size: @size;
+    padding: @pad;
+    text-align: @align;
+    width: @wide;
+}
